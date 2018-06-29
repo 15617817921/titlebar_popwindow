@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="BaseApp" parent="AppTheme" >
+        <item name="windowActionBar" >true</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/WindowsAnim</item>
+    </style>
+
+    <style name="WindowsAnim" >
+        <item name="android:windowEnterAnimation">@anim/fade_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_alpha_out</item>
+    </style>
+
+<!--POP默认显示动画-->
+    <style name="TRM_ANIM_STYLE">
+        <item name="android:windowEnterAnimation">@anim/trm_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/trm_popup_exit</item>
+    </style>
+
+    <style name="AlphaPopupWindow">
+        <item name="android:windowEnterAnimation">@anim/fade_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_alpha_out</item>
+    </style>
+    <style name="BottomPopupWindow">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>
